@@ -62,7 +62,7 @@ def get_images(url, condition):
 def main():
     if len(sys.argv) < 2:
         print("usage:./get_images.py [URL] [condition(Regular Expression)]")
-        sys.exit(0)
+        exit(0)
     url = sys.argv[1]
     condition = sys.argv[2]
     get_images(url, condition)
